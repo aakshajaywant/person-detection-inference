@@ -1,12 +1,12 @@
 ---
 
-# 🚀 Jetson Edge Person Detection (MQTT Pipeline)
+# Jetson Edge Person Detection (MQTT Pipeline)
 
 A lightweight **embedded device-to-cloud pipeline** built on **Jetson Orin Nano** using a USB camera for **real-time person detection**, with event-driven communication via **MQTT**.
 
 ---
 
-## 📌 Overview
+## Overview
 
 This project simulates a real-world **edge AI device**:
 
@@ -19,7 +19,7 @@ This project simulates a real-world **edge AI device**:
 
 ---
 
-## 🧠 Architecture
+## Architecture
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b3fd69e8-3cc1-482c-bdea-9e89eab08a4f" />
 
 ```text
@@ -40,21 +40,21 @@ Cloud Subscriber / Dashboard
 
 ---
 
-## ⚙️ Features
+## Features
 
-* 📷 USB camera integration (V4L2/OpenCV)
-* 🤖 Local AI inference (person detection)
-* ⚡ Event-driven system (threshold + cooldown)
-* 🖼️ Snapshot capture on detection
-* ☁️ MQTT-based device-to-cloud communication
-* ❤️ Device health telemetry (CPU, memory, uptime)
-* 🔁 Retry-ready architecture (extensible)
-* 🧩 Modular design (clean separation of concerns)
-* 🖥️ systemd service support (auto-start)
+* USB camera integration (V4L2/OpenCV)
+* Local AI inference (person detection)
+* Event-driven system (threshold + cooldown)
+* Snapshot capture on detection
+* MQTT-based device-to-cloud communication
+* Device health telemetry (CPU, memory, uptime)
+* Retry-ready architecture (extensible)
+* Modular design (clean separation of concerns)
+* systemd service support (auto-start)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 jetson_person_mqtt/
@@ -81,7 +81,7 @@ jetson_person_mqtt/
 
 ---
 
-## 🛠️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone repository
 
@@ -120,7 +120,7 @@ v4l2-ctl --list-devices
 
 ---
 
-## ▶️ Running the Project
+## Running the Project
 
 ### Terminal 1 → Start subscriber
 
@@ -138,7 +138,7 @@ python3 app.py
 
 ---
 
-## ✅ Expected Output
+## Expected Output
 
 Subscriber will print:
 
@@ -154,7 +154,7 @@ snapshots/
 
 ---
 
-## 📡 MQTT Topics
+## MQTT Topics
 
 ```text
 device/jetson-orin-01/events
@@ -164,7 +164,7 @@ device/jetson-orin-01/status
 
 ---
 
-## 📦 Example Event Payload
+## Example Event Payload
 
 ```json
 {
@@ -178,7 +178,7 @@ device/jetson-orin-01/status
 
 ---
 
-## ❤️ Health Telemetry
+## Health Telemetry
 
 Published every ~60 seconds:
 
@@ -193,7 +193,7 @@ Published every ~60 seconds:
 
 ---
 
-## ⚠️ Current State
+## Current State
 
 * Person detection is currently **stubbed (dummy logic)**
 * Replace `src/inference_engine.py` with:
@@ -202,7 +202,7 @@ Published every ~60 seconds:
 
 ---
 
-## 🔧 Run as systemd Service
+## Run as systemd Service
 
 ```bash
 sudo cp services/edge_person.service /etc/systemd/system/
@@ -219,7 +219,7 @@ journalctl -u edge_person.service -f
 
 ---
 
-## 🧪 Troubleshooting
+## Troubleshooting
 
 ### Camera not detected
 
@@ -245,20 +245,20 @@ mkdir -p snapshots
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
-* ✅ Replace dummy inference with real model
-* 📦 Dockerize edge application
-* ☁️ Integrate with AWS IoT Core
-* 🔐 Add TLS certificates for MQTT
-* 📊 Build web dashboard
-* 🧠 Add multi-object detection
-* 🔁 Implement store-and-forward retry queue
-* 📸 Upload images to cloud storage (S3)
+* Replace dummy inference with real model
+* Dockerize edge application
+* Integrate with AWS IoT Core
+* Add TLS certificates for MQTT
+* Build web dashboard
+* Add multi-object detection
+* Implement store-and-forward retry queue
+* Upload images to cloud storage (S3)
 
 ---
 
-## 🧑‍💻 Author
+## Author
 
 **Aaksha Jaywant**
 Embedded Systems | Edge AI | Firmware
