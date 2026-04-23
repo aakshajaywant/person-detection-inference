@@ -1,5 +1,3 @@
-# person-detection-inference
-
 ---
 
 # 🚀 Jetson Edge Person Detection (MQTT Pipeline)
