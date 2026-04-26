@@ -14,7 +14,7 @@ This project simulates a real-world **edge AI device**:
 * Runs **local AI inference (person detection)**
 * Generates events based on detection confidence
 * Saves image snapshots locally
-* Publishes telemetry to cloud via **MQTT**
+* Publishes telemetry to cloud via **MQTT** (Message Queuing Telemetry Transport)
 * Reports device health periodically
 
 ---
