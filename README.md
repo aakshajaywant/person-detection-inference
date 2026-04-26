@@ -22,6 +22,10 @@ This project simulates a real-world **edge AI device**:
 ## Architecture
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/b3fd69e8-3cc1-482c-bdea-9e89eab08a4f" />
 
+### MQTT Handshake
+<img width="3400" height="2078" alt="image" src="https://github.com/user-attachments/assets/a9f6ac9e-0771-4d95-b69c-1c86bf3e0acd" />
+
+
 ```text
 USB Camera
    ↓
