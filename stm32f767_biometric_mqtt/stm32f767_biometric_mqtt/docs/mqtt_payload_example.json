@@ -1,0 +1,12 @@
+{
+  "device_id": "stm32f767-bio-001",
+  "seq": 42,
+  "hr_bpm": 74.2,
+  "spo2_pct": 98,
+  "confidence": 92,
+  "status": 3,
+  "finger_detected": true,
+  "uptime_ms": 123456,
+  "gateway_ts": 1777500000,
+  "schema": "biometric.telemetry.v1"
+}
