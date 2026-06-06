@@ -1,0 +1,7 @@
+DEVICE_ID = "jetson-orin-01"
+CAMERA_INDEX = 0
+CONFIDENCE_THRESHOLD = 0.6
+MQTT_BROKER = "localhost"
+MQTT_PORT = 1883
+TOPIC_EVENTS = f"device/{DEVICE_ID}/events"
+TOPIC_HEALTH = f"device/{DEVICE_ID}/health"

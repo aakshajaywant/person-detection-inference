@@ -1,0 +1,10 @@
+[Unit]
+Description=Jetson Edge Person Detection
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
